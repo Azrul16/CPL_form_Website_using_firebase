@@ -1,0 +1,174 @@
+/* General body styling */
+body {
+  background-color: #1e1e2d;
+  color: #e4e4e4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container for the contact form and image */
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+/* Styling for the left side image */
+.contact-left img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Styling for the right side form section */
+.contact-right {
+  max-width: 500px;
+  margin-left: 30px;
+  padding: 20px;
+  background-color: #1f1f2e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading styling */
+.contact-right h1 {
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.contact-right p {
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+/* Highlighted text */
+.contact-right p span {
+  color: #ff8c00;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+label {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #cccccc;
+}
+
+/* Input, textarea, and select styling for a consistent look */
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  background-color: #2c2c3c;
+  border: none;
+  border-radius: 5px;
+  color: #e4e4e4;
+  font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  appearance: none; /* Removes default dropdown arrow */
+}
+
+/* Custom dropdown arrow for select elements */
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+/* Hover and focus effect for input, textarea, and select */
+input:hover, textarea:hover, select:hover,
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff8c00;
+}
+
+/* Styling for the submit button */
+button {
+  padding: 12px;
+  background-color: #ff8c00;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6f00;
+}
+
+.countdown {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e1e2d;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.time-number {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.time-label {
+  font-size: 0.8em;
+  color: #ccc;
+}
+@media (max-width: 600px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-right {
+    max-width: none; /* Override max-width for mobile */
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
